@@ -11,13 +11,11 @@
         "key": "status-colors-resources",
         "name": { "value": "Status Colors CSS" },
         "context": ["atl.general"],
-        "resource": [
-          {
-            "type": "download",
-            "name": "status-colors.css",
-            "location": "/css/status-colors.css"
-          }
-        ]
+        "resources": {
+          "css": [
+            { "name": "status-colors", "location": "/css/status-colors.css" }
+          ]
+        }
       }
     ]
   }
