@@ -1,5 +1,5 @@
 {
-  "key": "com.example.status-colors",
+  "key": "com.ganso.status-colors",
   "name": "Custom Status Colors",
   "description": "Override Jira Cloud status lozenge colors site-wide",
   "baseUrl": "https://ganso619.github.io/status-colors",
@@ -14,7 +14,8 @@
         "resource": [
           {
             "type": "download",
-            "url": "/css/status-colors.css"
+            "name": "status-colors.css",
+            "location": "/css/status-colors.css"
           }
         ]
       }
