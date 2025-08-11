@@ -2,16 +2,22 @@
   "key": "com.example.status-colors",
   "name": "Custom Status Colors",
   "description": "Override Jira Cloud status lozenge colors site-wide",
-  "baseUrl": "https://Ganso619.github.io/status-colors",
+  "baseUrl": "https://ganso619.github.io/status-colors",
   "authentication": { "type": "none" },
+  "apiVersion": 1,
   "modules": {
-    "webResources": [{
-      "key": "status-colors-resources",
-      "scope": "SITE",
-      "resourceUrls": {
-        "stylesheet": [{ "url": "/css/status-colors.css" }]
-      },
-      "context": "atl.general"
-    }]
+    "webResource": [
+      {
+        "key": "status-colors-resources",
+        "name": { "value": "Status Colors CSS" },
+        "context": ["atl.general"],
+        "resource": [
+          {
+            "type": "download",
+            "url": "/css/status-colors.css"
+          }
+        ]
+      }
+    ]
   }
 }
